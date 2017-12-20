@@ -1283,7 +1283,7 @@ public class MavenProjectsManager extends MavenSimpleProjectComponent
 
     @Override
     public void markDirtyAllExternalProjects(@NotNull Project project) {
-      runWhenFullyOpen(project, (manager) -> manager.doScheduleUpdateProjects(null, true, true));
+      runWhenFullyOpen(project, (manager) -> manager.doScheduleUpdateProjects(null, true, false));
     }
 
     @Override
